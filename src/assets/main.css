@@ -1,0 +1,39 @@
+#app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+main,
+footer {
+  padding: 1em 2em;
+}
+
+.masonry {
+  columns: 300px;
+}
+
+.masonry>div {
+  overflow: hidden;
+  margin-bottom: 1em;
+  break-inside: avoid;
+}
+
+@media (max-width: 900px) {
+
+  header,
+  main,
+  footer {
+    padding: 1em 1em;
+  }
+}
