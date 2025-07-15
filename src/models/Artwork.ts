@@ -1,4 +1,4 @@
-import type { ArtworkData, DetailedArtworkData } from "@/types/ArtworkResponse.ts";
+import type { ArtworkData, DetailedArtworkData } from "@/interfaces/Artwork";
 
 export class Artwork {
   id: number;

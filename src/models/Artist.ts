@@ -1,4 +1,4 @@
-import type { ArtistResponse } from "@/types/ArtistResponse.ts";
+import type { ArtistData } from "@/interfaces/Artist";
 
 export class Artist {
   id: number;
@@ -6,7 +6,7 @@ export class Artist {
   birthDate: number;
   deathDate: number;
   title: string;
-  constructor(data: ArtistResponse) {
+  constructor(data: ArtistData) {
     this.id = data.id
     this.description = data.description
     this.birthDate = data.birth_date

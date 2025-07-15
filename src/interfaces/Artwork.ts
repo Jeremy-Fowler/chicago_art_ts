@@ -1,6 +1,5 @@
 
 export interface ArtworkData {
-  _score: number;
   id: number;
   title: string;
   thumbnail: Thumbnail;
@@ -15,13 +14,11 @@ interface Thumbnail {
 }
 
 export interface DetailedArtworkData extends ArtworkData {
-  id: number;
   api_model: string;
   api_link: string;
   is_boosted: boolean;
   title: string;
   alt_titles: null;
-  thumbnail: Thumbnail;
   main_reference_number: string;
   has_not_been_viewed_much: boolean;
   boost_rank: number;
@@ -100,7 +97,6 @@ export interface DetailedArtworkData extends ArtworkData {
   technique_ids: string[];
   technique_titles: string[];
   theme_titles: string[];
-  image_id: string;
   alt_image_ids: string[];
   document_ids: string[];
   sound_ids: string[];
@@ -140,11 +136,4 @@ interface Dimensionsdetail {
   height: number;
   diameter: null;
   clarification: null;
-}
-
-interface Thumbnail {
-  lqip: string;
-  width: number;
-  height: number;
-  alt_text: string;
 }
