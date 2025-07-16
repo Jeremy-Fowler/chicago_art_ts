@@ -6,11 +6,10 @@ interface Response {
 export interface SingleResponse<T> extends Response {
   data: T;
 }
+
 export interface PaginatedResponse<T> extends Response {
   pagination: Pagination;
   data: T[];
-  info: Info;
-  config: Config;
 }
 
 interface Pagination {
